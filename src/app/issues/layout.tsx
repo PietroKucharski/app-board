@@ -1,7 +1,7 @@
 import "./../globals.css"
 import { Header } from "./header"
 
-export default function BoardLayout({
+export default function IssueLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
@@ -11,6 +11,7 @@ export default function BoardLayout({
       <div>
         <Header />
       </div>
+
       {children}
     </div>
   )
