@@ -4,7 +4,9 @@ import { Button } from "@/components/button"
 import { Card } from "@/components/card"
 import { Section } from "@/components/section"
 
-export const generateMetada = (): Metadata => {}
+export const metadata: Metadata = {
+  title: "Board",
+}
 
 interface BoardProps {
   searchParams: Promise<{ q?: string }>
