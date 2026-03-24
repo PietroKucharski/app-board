@@ -1,6 +1,6 @@
 "use client"
 
-import { useQuery, useSuspenseQuery } from "@tanstack/react-query"
+import { useQuery } from "@tanstack/react-query"
 import { LikeButton } from "@/components/like-button"
 import { Skeleton } from "@/components/skeleton"
 import { getIssueInteraction } from "@/http/get-issue-interactions"

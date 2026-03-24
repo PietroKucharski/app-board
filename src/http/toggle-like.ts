@@ -10,7 +10,6 @@ export async function toggleLike({ issueId }: ToggleLikeParams) {
     `/api/issues/${issueId}/like`,
     clientEnv.NEXT_PUBLIC_API_URL,
   )
-
   const response = await fetch(url, {
     method: "POST",
   })
