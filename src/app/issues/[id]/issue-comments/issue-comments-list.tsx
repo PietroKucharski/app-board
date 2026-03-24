@@ -1,6 +1,6 @@
+import { formatDistanceToNow } from "date-fns"
 import { Comment } from "@/components/comment"
 import { listIssueComments } from "@/http/list-issue-comments"
-import { formatDistanceToNow } from "date-fns"
 
 interface IssueCommentsListProps {
   issueId: string
@@ -26,7 +26,9 @@ export async function IssueCommentsList({ issueId }: IssueCommentsListProps) {
             <Comment.Content>
               <Comment.Header>
                 <Comment.Author>{comment.author.name}</Comment.Author>
-                <Comment.Time>{formatDistanceToNow(comment.createdAt, {addSuffix: true})}</Comment.Time>
+                <Comment.Time>
+                  {formatDistanceToNow(comment.createdAt, { addSuffix: true })}
+                </Comment.Time>
               </Comment.Header>
 
               <Comment.Text>{comment.text}</Comment.Text>
