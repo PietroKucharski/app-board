@@ -11,7 +11,7 @@ interface BoardProps {
   searchParams: Promise<{ q?: string }>
 }
 
-export default async function Home({ searchParams }: BoardProps) {
+export default async function Board({ searchParams }: BoardProps) {
   const { q } = await searchParams
   const issues = await listIssues({ search: q })
 
